@@ -1,0 +1,15 @@
+def main():
+    total_players = int(input()) 
+    dict= {} 
+    for i in range(total_players):
+        a,b,c,d=input().split()
+        b=int(b)
+        c=int(c)
+        d=int(d)
+        dict.update({a:[b,c,d]})
+    s = input() 
+    for j in dict.keys():
+        if j == s:
+            summ = sum(dict[j])
+            print("{0:.2f}".format(summ/3))
+main()    
