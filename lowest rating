@@ -1,0 +1,14 @@
+n = int(input())
+dic={} 
+for i in range(n): 
+    name = input()
+    marks = int(input()) 
+    dic[name] = marks
+    l = min(list(dic.values())) 
+    t=[]
+for k,v in dic.items():
+    if l==v:
+        t.append(k)
+for i in sorted(t):
+    print(i)
+
